@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Meet Noah — the young maker behind Noah's 3D Print Shop." />
+    <title>About — Noah's 3D Print Shop</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body data-page="about">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a href="../index.html" class="brand">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-title">Noah's 3D Print Shop</span>
+            <span class="brand-tagline">Custom 3D-printed creations</span>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="../index.html" data-nav="home">Home</a>
+          <a href="shop.html" data-nav="shop">Shop</a>
+          <a href="custom-orders.html" data-nav="custom">Custom Orders</a>
+          <a href="about.html" data-nav="about">About</a>
+          <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button type="button" class="icon-btn hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+          <button type="button" class="cart-btn" id="cart-toggle" aria-label="Open shopping cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M7 7h14l-1.7 8.5a2 2 0 0 1-2 1.6H9.1a2 2 0 0 1-2-1.6L5.6 3.8A1.5 1.5 0 0 0 4.1 2.6H3"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M9.5 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM17.5 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span>Cart</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+      <div class="container mobile-menu" id="mobile-menu">
+        <a href="../index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="custom-orders.html">Custom Orders</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="container">
+        <h1 class="page-title">About Noah</h1>
+        <p class="page-intro">
+          I'm a young maker who turned a 3D printer into a little business — and I'm having a blast doing it.
+        </p>
+
+        <div class="two-col">
+          <div class="panel">
+            <h2 style="margin-top: 0">Hey! I'm Noah.</h2>
+            <p>
+              I started 3D printing because I wanted to build things that didn't exist yet — toys, tools, funny desk
+              buddies, useful gadgets, you name it. My family was my first “customers,” and then friends started asking for
+              prints too. That's how <strong>Noah's 3D Print Shop</strong> started!
+            </p>
+            <p>
+              Running a shop is a huge learning adventure: designing, testing, fixing mistakes, and making the next version
+              even better. I love seeing someone get excited about something I made.
+            </p>
+            <p class="note" style="margin: 0">
+              <strong>My favorite:</strong> custom orders. If you have a creative idea — even a weird one — you're my kind of
+              customer.
+            </p>
+          </div>
+          <div class="panel">
+            <h2 style="margin-top: 0">Photo spot</h2>
+            <p>Add a photo of Noah or the printer in action — drop an image in the <code>images/</code> folder and link it here when you're ready.</p>
+            <div class="spark" style="height: 220px" role="img" aria-label="Placeholder for a photo"></div>
+            <a class="btn btn-secondary" href="shop.html" style="margin-top: 14px; width: 100%">Browse the shop →</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">Noah's 3D Print Shop</div>
+          <p class="footer-note">All items handmade &amp; 3D printed by Noah's 3D Print Shop.</p>
+        </div>
+        <div class="footer-links">
+          <a href="shop.html">Shop</a>
+          <a href="custom-orders.html">Custom Orders</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="cart-backdrop" class="cart-backdrop" aria-hidden="true"></div>
+    <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-drawer__head">
+        <h2>Your cart</h2>
+        <button type="button" class="icon-btn" id="cart-close" aria-label="Close cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="cart-drawer__body" id="cart-lines"></div>
+      <div class="cart-drawer__foot">
+        <div class="cart-total">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <button type="button" class="btn btn-primary" id="cart-clear" style="width: 100%">Clear cart</button>
+        <p class="note" style="margin: 0; text-align: center; font-size: 13px">
+          Checkout connects later — your cart saves in this browser.
+        </p>
+      </div>
+    </aside>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="../data/products.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

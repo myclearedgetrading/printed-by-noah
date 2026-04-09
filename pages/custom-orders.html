@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Request a custom 3D print from Noah's 3D Print Shop." />
+    <title>Custom Orders — Noah's 3D Print Shop</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body data-page="custom">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a href="../index.html" class="brand">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-title">Noah's 3D Print Shop</span>
+            <span class="brand-tagline">Custom 3D-printed creations</span>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="../index.html" data-nav="home">Home</a>
+          <a href="shop.html" data-nav="shop">Shop</a>
+          <a href="custom-orders.html" data-nav="custom">Custom Orders</a>
+          <a href="about.html" data-nav="about">About</a>
+          <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button type="button" class="icon-btn hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+          <button type="button" class="cart-btn" id="cart-toggle" aria-label="Open shopping cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M7 7h14l-1.7 8.5a2 2 0 0 1-2 1.6H9.1a2 2 0 0 1-2-1.6L5.6 3.8A1.5 1.5 0 0 0 4.1 2.6H3"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M9.5 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM17.5 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span>Cart</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+      <div class="container mobile-menu" id="mobile-menu">
+        <a href="../index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="custom-orders.html">Custom Orders</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="container">
+        <h1 class="page-title">Custom orders</h1>
+        <p class="page-intro">
+          This is where the magic happens — tell me what you want printed, and we'll team up to make it real.
+        </p>
+
+        <div class="two-col">
+          <div class="panel">
+            <h2 style="margin-top: 0">How it works (3 steps)</h2>
+            <div class="steps">
+              <div class="step">
+                <span class="step-num">1</span>
+                <div>
+                  <strong>Send your idea</strong>
+                  <span>Describe what you want, pick a color vibe, and add a reference photo if you have one.</span>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step-num">2</span>
+                <div>
+                  <strong>I review &amp; reply</strong>
+                  <span>I'll check size, details, and what's possible on my printer — then message you back.</span>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step-num">3</span>
+                <div>
+                  <strong>Confirm, print &amp; ship</strong>
+                  <span>Once we agree on the plan, I print it with care and get it ready to send your way.</span>
+                </div>
+              </div>
+            </div>
+            <p class="note" style="margin: 0">
+              <strong>Friendly note:</strong> I'm a kid running Noah's 3D Print Shop, so reply times can vary — but I read
+              every message and I'm excited to help!
+            </p>
+          </div>
+
+          <div class="panel">
+            <h2 style="margin-top: 0">Custom order form</h2>
+            <form id="custom-order-form">
+              <div class="field-row">
+                <label>
+                  Your name
+                  <input type="text" name="name" placeholder="Your name" required autocomplete="name" />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="you@email.com" required autocomplete="email" />
+                </label>
+              </div>
+              <label>
+                What do you want printed?
+                <small>Size, theme, who it's for — the more detail, the better!</small>
+                <textarea name="description" placeholder="Example: a small dragon keychain with my initials on the back..." required></textarea>
+              </label>
+              <label>
+                Color preference
+                <select name="color">
+                  <option>Surprise me — Noah picks something awesome</option>
+                  <option>Electric blue</option>
+                  <option>Orange pop</option>
+                  <option>Lime green</option>
+                  <option>Galaxy purple</option>
+                  <option>Classic white</option>
+                  <option>Midnight black</option>
+                </select>
+              </label>
+              <label>
+                Reference image (optional)
+                <input type="file" name="reference" accept="image/*" />
+              </label>
+              <button type="submit" class="btn btn-primary" style="width: 100%">Submit custom request →</button>
+              <p class="note" style="margin: 0">
+                Demo mode: this form doesn't email a server yet — it shows what the real experience will feel like.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">Noah's 3D Print Shop</div>
+          <p class="footer-note">All items handmade &amp; 3D printed by Noah's 3D Print Shop.</p>
+        </div>
+        <div class="footer-links">
+          <a href="shop.html">Shop</a>
+          <a href="custom-orders.html">Custom Orders</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="cart-backdrop" class="cart-backdrop" aria-hidden="true"></div>
+    <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-drawer__head">
+        <h2>Your cart</h2>
+        <button type="button" class="icon-btn" id="cart-close" aria-label="Close cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="cart-drawer__body" id="cart-lines"></div>
+      <div class="cart-drawer__foot">
+        <div class="cart-total">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <button type="button" class="btn btn-primary" id="cart-clear" style="width: 100%">Clear cart</button>
+        <p class="note" style="margin: 0; text-align: center; font-size: 13px">
+          Checkout connects later — your cart saves in this browser.
+        </p>
+      </div>
+    </aside>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="../data/products.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
