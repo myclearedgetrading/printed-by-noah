@@ -411,6 +411,18 @@ main {
   font-size: 15px;
 }
 
+.mini-card__photo {
+  display: block;
+  width: 100%;
+  max-height: min(280px, 38vh);
+  margin-top: 14px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--card) 88%, #0f172a);
+}
+
 .spark {
   height: 120px;
   border-radius: var(--radius-md);
