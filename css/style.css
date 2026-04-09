@@ -797,6 +797,20 @@ textarea::placeholder {
   gap: 14px;
 }
 
+.footer-brand-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.brand-badge--footer {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.22);
+}
+
 .footer-brand {
   font-weight: 900;
   letter-spacing: -0.02em;
