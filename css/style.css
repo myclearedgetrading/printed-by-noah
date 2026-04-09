@@ -419,6 +419,19 @@ main {
     repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(56, 189, 248, 0.06) 10px, rgba(56, 189, 248, 0.06) 11px);
 }
 
+.bio-photo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: min(70vh, 520px);
+  height: auto;
+  margin-inline: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
 /* ——— Sections ——— */
 .section {
   margin-top: 36px;
