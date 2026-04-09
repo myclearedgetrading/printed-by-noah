@@ -5,6 +5,13 @@
   const STORAGE_KEY = "noahs3dprintshop_cart_v1";
   const PRODUCTS = Array.isArray(window.NOAH_PRODUCTS) ? window.NOAH_PRODUCTS : [];
 
+  /** Resolve catalog image paths from both site root (index) and pages/*.html */
+  function assetUrl(path) {
+    if (!path || /^https?:\/\//i.test(path)) return path;
+    const normalized = path.replace(/^\.\//, "");
+    return window.location.pathname.includes("/pages/") ? "../" + normalized : normalized;
+  }
+
   function getCart() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -95,7 +102,7 @@
           const safeName = escapeHtml(p.name);
           return `
             <div class="cart-line" data-cart-id="${escapeAttr(id)}">
-              <img src="${escapeAttr(p.image)}" alt="${escapeAttr(p.name)}" width="56" height="56" loading="lazy" />
+              <img src="${escapeAttr(assetUrl(p.image))}" alt="${escapeAttr(p.name)}" width="56" height="56" loading="lazy" />
               <div>
                 <h3>${safeName}</h3>
                 <p>${formatMoney(p.price)} each</p>
@@ -183,7 +190,7 @@
   function renderProductCard(p) {
     return `
       <article class="product-card" data-product-id="${escapeAttr(p.id)}">
-        <img class="product-card__img" src="${escapeAttr(p.image)}" alt="${escapeAttr(p.name)}" width="400" height="320" loading="lazy" />
+        <img class="product-card__img" src="${escapeAttr(assetUrl(p.image))}" alt="${escapeAttr(p.name)}" width="400" height="320" loading="lazy" />
         <div class="product-card__body">
           <h3 class="product-card__title">${escapeHtml(p.name)}</h3>
           <div class="product-card__meta">

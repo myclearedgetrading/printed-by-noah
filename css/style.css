@@ -532,7 +532,7 @@ main {
 
 .product-card__img {
   aspect-ratio: 400 / 320;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(251, 146, 60, 0.08));
 }
