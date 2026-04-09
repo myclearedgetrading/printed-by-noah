@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Noah's 3D Print Shop">
+  <rect width="32" height="32" rx="8" fill="#070b14"/>
+  <path
+    d="M9 8v16M9 8l14 16M23 8v16"
+    fill="none"
+    stroke="url(#noah-favicon-grad)"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <defs>
+    <linearGradient id="noah-favicon-grad" x1="9" y1="8" x2="23" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+  </defs>
+</svg>
