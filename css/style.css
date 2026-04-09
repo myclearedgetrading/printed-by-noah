@@ -257,6 +257,34 @@ textarea {
   }
 }
 
+/* ——— Free shipping banner (home) ——— */
+.shipping-banner {
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(
+    100deg,
+    color-mix(in oklab, var(--electric) 20%, transparent),
+    color-mix(in oklab, var(--lime) 14%, transparent)
+  );
+}
+
+.shipping-banner__inner {
+  padding: 10px 0 12px;
+}
+
+.shipping-banner__text {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.shipping-banner__text strong {
+  font-weight: 900;
+  color: var(--electric);
+}
+
 /* ——— Main ——— */
 main {
   flex: 1;
@@ -893,6 +921,21 @@ textarea::placeholder {
 .cart-drawer__head h2 {
   margin: 0;
   font-size: 18px;
+}
+
+.cart-drawer__promo {
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.45;
+  color: var(--ink);
+  background: color-mix(in oklab, var(--electric) 14%, transparent);
+  border-bottom: 1px solid var(--border);
+}
+
+.cart-drawer__promo strong {
+  font-weight: 900;
+  color: var(--electric);
 }
 
 .cart-drawer__body {
